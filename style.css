@@ -57,8 +57,8 @@
 }
 .banner{
   background-image: url('./images/Group13.png');
-  background-repeat: no-repeat;
   background-size: 100%;
+  background-repeat: no-repeat;
   margin: 50px auto;
   height: 500px;
   width: 1170px;
@@ -394,22 +394,41 @@ footer hr{
 }
 /* media queries  */
 @media screen and (max-width:600px){
-  .banner img{
-    width: 335px;
-    height: 483px;
-  }
+  
   .main-section,
   .row-container{
     flex-direction: column;
     margin: 50px auto;
   }
+  .banner img{
+    width: 335px;
+    height: 483px;
+  }
   .banner-title{
     text-align: center;
   }
+  
   .btn-list,
   .fast-btn{
     flex-direction: column;
+    gap: 6px;
   }
+  .choose-container{
+    display: block;
+  }
+  .choose-content,
+  .choose-content-2{
+    width: 335px;
+    height: 350px;
+  }
+ .choose-content-1{
+  margin-top: 50px;
+  width: 335px;
+  height: 350px;
+ }
+ .newsletter-content{
+  margin-left: auto;
+}
   .header .fa-bars{
     display: block;
 }
@@ -417,9 +436,13 @@ footer hr{
     position: absolute;
     top:50px; left:444px;
     background: #eee;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .header .nevber a{
     display: block;
+  }
+  .img img{
+    margin-top: 20px;
   }
   .newsletter{
     display: block;
@@ -431,13 +454,10 @@ footer hr{
   .newsletter-content{
     width: 90%;
   }
-  .img img{
-    width: 100%;
-  }
+  
+  .title-description,
+  .banner-content,
   .primary-description{
-    padding: 20px;
-  }
-  .title-description{
     padding: 20px;
   }
 }
